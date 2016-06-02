@@ -45,8 +45,8 @@
 		CE94EA5E1D00C30B009D5C89 /* BBTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5936D54B165F1001009CAA5A /* BBTableView.m */; };
 		CE94EA5F1D00C30B009D5C89 /* BBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 987021F2158271F10015FB5E /* BBAppDelegate.m */; };
 		CE94EA601D00C35E009D5C89 /* BBCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5936D549165F1001009CAA5A /* BBCell.m */; };
-		CE94EA631D00C7AC009D5C89 /* BBTableViewInterceptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 5936D58E1662AB47009CAA5A /* BBTableViewInterceptor.h */; };
-		CE94EA641D00C7AC009D5C89 /* BBTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5936D54A165F1001009CAA5A /* BBTableView.h */; };
+		CE94EA631D00C7AC009D5C89 /* BBTableViewInterceptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 5936D58E1662AB47009CAA5A /* BBTableViewInterceptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE94EA641D00C7AC009D5C89 /* BBTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5936D54A165F1001009CAA5A /* BBTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
