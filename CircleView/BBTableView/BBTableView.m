@@ -194,31 +194,31 @@
 }
 
 #pragma mark Setter/Getter
-- (void)setDataSource:(id<UITableViewDataSource>)dataSource
-{
-    if( !_dataSourceInterceptor)
-    {
-        _dataSourceInterceptor = [[BBTableViewInterceptor alloc] init];
-    }
-    
-    _dataSourceInterceptor.receiver = dataSource;
-    _dataSourceInterceptor.middleMan = self;
-    
-    [super setDataSource:(id<UITableViewDataSource>)_dataSourceInterceptor];
-}
+//- (void)setDataSource:(id<UITableViewDataSource>)dataSource
+//{
+//    if( !_dataSourceInterceptor)
+//    {
+//        _dataSourceInterceptor = [[BBTableViewInterceptor alloc] init];
+//    }
+//    
+//    _dataSourceInterceptor.receiver = dataSource;
+//    _dataSourceInterceptor.middleMan = self;
+//    
+//    [super setDataSource:(id<UITableViewDataSource>)_dataSourceInterceptor];
+//}
 
 
 #pragma mark UITableViewDataSource
-- (NSInteger)tableView:(UITableView*)tableView numberOfRowsInSection:(NSInteger)section
-{
-    _totalRows = [_dataSourceInterceptor.receiver tableView:tableView numberOfRowsInSection:section  ];
-    return _totalRows *( self.enableInfiniteScrolling ? 3 : 1 );
-}
-
-- (UITableViewCell*)tableView:(UITableView*)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return [_dataSourceInterceptor.receiver tableView:tableView cellForRowAtIndexPath:MORPHED_INDEX_PATH(indexPath)];
-}
+//- (NSInteger)tableView:(UITableView*)tableView numberOfRowsInSection:(NSInteger)section
+//{
+//    _totalRows = [_dataSourceInterceptor.receiver tableView:tableView numberOfRowsInSection:section  ];
+//    return _totalRows *( self.enableInfiniteScrolling ? 3 : 1 );
+//}
+//
+//- (UITableViewCell*)tableView:(UITableView*)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    return [_dataSourceInterceptor.receiver tableView:tableView cellForRowAtIndexPath:MORPHED_INDEX_PATH(indexPath)];
+//}
 
 
 @end
