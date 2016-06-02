@@ -17,3 +17,5 @@ FOUNDATION_EXPORT const unsigned char CircleViewVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <CircleView/PublicHeader.h>
 
 
+#import <CircleView/BBTableViewInterceptor.h>
+#import <CircleView/BBTableView.h>
